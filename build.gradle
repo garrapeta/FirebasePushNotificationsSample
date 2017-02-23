@@ -9,6 +9,9 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        // Firebase Push Notifications. REF: https://www.codementor.io/flame3/send-push-notifications-to-android-with-firebase-du10860kb
+        classpath 'com.google.gms:google-services:3.0.0'
     }
 }
 

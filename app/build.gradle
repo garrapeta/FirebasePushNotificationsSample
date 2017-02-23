@@ -24,7 +24,18 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    // REF: https://www.codementor.io/flame3/send-push-notifications-to-android-with-firebase-du10860kb
+    // this line must be included to integrate with Firebase
+    // this line must be included to use FCM
+
+
+    compile 'com.google.firebase:firebase-core:9.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta5'
     testCompile 'junit:junit:4.12'
 }
+
+// Firebase Push Notifications. REF: https://www.codementor.io/flame3/send-push-notifications-to-android-with-firebase-du10860kb
+apply plugin: 'com.google.gms.google-services'
